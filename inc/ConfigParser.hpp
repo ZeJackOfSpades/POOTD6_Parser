@@ -15,6 +15,8 @@ private:
 public:
 	ConfigParser();
 	bool initConfig(string path);
+	string getFilePath(){return this->filePath;}
+	setFilePath(string path){this->filePath = path;}
 	//~ConfigParser();
 	
 };
