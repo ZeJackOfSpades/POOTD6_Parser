@@ -3,10 +3,13 @@
 // Question 3 
 #include "ConfigParser.hpp"
 
+ConfigParser::ConfigParser(void){
+
+}
 bool ConfigParser::initConfig(string path){
 	char c;
-	bool lockCommand = false
-	string tmpCommand;
+	bool lockCommand = false;
+	string tmpCommand = "";
 
 
 	this->filePath	=	path;
@@ -24,7 +27,7 @@ bool ConfigParser::initConfig(string path){
 		if(lockCommand	== true){
 			tmpCommand += c;
 		}
-		if(c == ']'){
+		if(c == ']' && lockCommand == true){
 			lockCommand = false;
 			this->vArrayCommand.push_back(tmpCommand);
 			tmpCommand = "";

@@ -10,4 +10,8 @@ using namespace std;
 
 TEST_CASE("Test init config", "[ConfigParser][InitConfig]") {
     /* Question 4 */
+    ConfigParser cp;
+    REQUIRE(cp.initConfig("data/config.ini") == true);
+    
+    
 }
