@@ -11,7 +11,6 @@ bool ConfigParser::initConfig(string path){
 	bool lockCommand = false;
 	string tmpCommand = "";
 
-
 	this->filePath	=	path;
 
 	ifstream fichier(path, ios::in);

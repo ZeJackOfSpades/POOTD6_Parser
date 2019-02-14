@@ -14,6 +14,6 @@ TEST_CASE("Test init config", "[ConfigParser][InitConfig]") {
     
     REQUIRE_FALSE(cp.initConfig("Za warudo") == true);
     REQUIRE(cp.initConfig("data/config.ini") == true);
-
+    REQUIRE(cp.getFilePath() == "data/config.ini");
     
 }
