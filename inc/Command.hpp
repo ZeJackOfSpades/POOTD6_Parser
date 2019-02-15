@@ -4,6 +4,7 @@
 #include <iostream>
 #include <vector>
 #include <string>
+#include <fstream>
 
 using namespace std;
 
@@ -16,6 +17,7 @@ private:
 	
 public:
 	Command();
-	~Command();
+	bool initCommand(string filePath);
+	//~Command();
 	
 };
